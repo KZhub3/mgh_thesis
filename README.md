@@ -2,7 +2,7 @@
 
 This repository contains NONMEM control files for the dissertation. Detailed information about each file is:
 
-**run44.mod**: The two-compartment model with four-transit compartments.
+**run44.mod**: The two-compartment model with four-transit compartments.<br>
 **run54.mod**: The three-compartment model with four-transit compartments.
 **run62.mod**: The three-compartment model with four-transit compartments, incorporating body weights as an allometric function.
 **run71.mod - run78.mod**: The exploration of drug-drug interaction between pyronaridine and primaquine.
