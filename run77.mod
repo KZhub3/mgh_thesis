@@ -1,11 +1,3 @@
-;;----------------------------------------------------------------------------;;
-;; MORU NONMEM Pyronaridine -- drug-drug interaction V4
-;; 
-;;----------------------------------------------------------------------------;;
-;; Kuangyi Zhang
-;; Date: 2023-05-16
-;;----------------------------------------------------------------------------;;
-
 $PROBLEM Pyronaridine -- drug-drug interaction V4
 $INPUT 		ID 
 			DATE = DROP 						
@@ -43,10 +35,10 @@ $PK
 			F1 = THETA(1) * EXP(ETA(1)) 
 			MTT = THETA(2) * EXP(ETA(2)) 												; Mean transit time
 			CL = THETA(3) * (WT/58.5)**0.75 * EXP(ETA(3))   						; Individual clearance
-			V2 = THETA(4) * (WT/58.5)**1 * EXP(ETA(4)) 									; Individual volumn for central compartment
-			V3 = THETA(5) * (WT/58.5)**1 * EXP(ETA(5)) 									; Individual volumn for peripheral compartment 1
+			V2 = THETA(4) * (WT/58.5)**1 * EXP(ETA(4)) 									; Individual volume for central compartment
+			V3 = THETA(5) * (WT/58.5)**1 * EXP(ETA(5)) 									; Individual volume for peripheral compartment 1
 			Q1 = THETA(6) * (WT/58.5)**0.75 * EXP(ETA(6)) 	
-			V4 = THETA(7) * (WT/58.5)**1 * EXP(ETA(7)) * COV1									; Individual volumn for peripheral compartment 2
+			V4 = THETA(7) * (WT/58.5)**1 * EXP(ETA(7)) * COV1									; Individual volume for peripheral compartment 2
 			Q2 = THETA(8) * (WT/58.5)**0.75 * EXP(ETA(8)) 
 
 			KTR = 5 / MTT
