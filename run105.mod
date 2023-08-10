@@ -1,11 +1,3 @@
-;;----------------------------------------------------------------------------;;
-;; MORU NONMEM Pyronaridine -- PD linear model
-;; 
-;;----------------------------------------------------------------------------;;
-;; Kuangyi Zhang
-;; Date: 2023-07-01
-;;----------------------------------------------------------------------------;;
-
 $PROBLEM Pyronaridine -- PD linear model
 $INPUT 		ID 
 			DATE = DROP 						
@@ -52,10 +44,10 @@ $PK
 			F1 = IF1
 			MTT = IMTT			; Mean transit time
 			CL = ICL 			; Individual clearance
-			V2 = IV2			; Individual volumn for central compartment
-			V3 = IV3 			; Individual volumn for peripheral compartment 1
+			V2 = IV2			; Individual volume for central compartment
+			V3 = IV3 			; Individual volume for peripheral compartment 1
 			Q1 = IQ1
-			V4 = IV4 			; Individual volumn for peripheral compartment 2
+			V4 = IV4 			; Individual volume for peripheral compartment 2
 			Q2 = IQ2
 
 			TVSLOPE = THETA(1)
