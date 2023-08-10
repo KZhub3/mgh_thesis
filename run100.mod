@@ -1,11 +1,3 @@
-;;----------------------------------------------------------------------------;;
-;; MORU NONMEM Pyronaridine -- final model (calculate secondary parameters)
-;; 
-;;----------------------------------------------------------------------------;;
-;; Kuangyi Zhang
-;; Date: 2023-07-05
-;;----------------------------------------------------------------------------;;
-
 $PROBLEM Pyronaridine -- final model (calculate secondary parameters)
 $INPUT 		ID 
 			DATE = DROP 						
@@ -84,16 +76,16 @@ $PK
 			CL = TVCL * (WT/58.5)**0.75 * EXP(ETA(3))  		; Individual clearance
 
 			TVV2 = THETA(4)
-			V2 = TVV2 * (WT/58.5)**1 * EXP(ETA(4)) 			; Individual volumn for central compartment
+			V2 = TVV2 * (WT/58.5)**1 * EXP(ETA(4)) 			; Individual volume for central compartment
 
 			TVV3 = THETA(5)
-			V3 = TVV3 * (WT/58.5)**1 * EXP(ETA(5)) 			; Individual volumn for peripheral compartment 1
+			V3 = TVV3 * (WT/58.5)**1 * EXP(ETA(5)) 			; Individual volume for peripheral compartment 1
 
 			TVQ1 = THETA(6)
 			Q1 = TVQ1 * (WT/58.5)**0.75 * EXP(ETA(6))
 
 			TVV4 = THETA(7) 	
-			V4 = TVV4 * (WT/58.5)**1 * EXP(ETA(7)) 			; Individual volumn for peripheral compartment 2
+			V4 = TVV4 * (WT/58.5)**1 * EXP(ETA(7)) 			; Individual volume for peripheral compartment 2
 
 			TVQ2 = THETA(8)
 			Q2 = TVQ2 * (WT/58.5)**0.75 * EXP(ETA(8)) 
