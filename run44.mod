@@ -1,11 +1,3 @@
-;;----------------------------------------------------------------------------;;
-;; MORU NONMEM Pyronaridine -- 2 compartment model + 4 transit (F1)
-;; 
-;;----------------------------------------------------------------------------;;
-;; Kuangyi Zhang
-;; Date: 2023-05-10
-;;----------------------------------------------------------------------------;;
-
 $PROBLEM Pyronaridine -- 2 compartment model + 4 transit (F1)
 $INPUT 		ID 
 			DATE = DROP 						
@@ -39,8 +31,8 @@ $PK
 			F1 = THETA(1) * EXP(ETA(1))
 			MTT = THETA(2) * EXP(ETA(2)) 		; Mean transit time
 			CL = THETA(3) * EXP(ETA(3)) 		; Individual clearance
-			V2 = THETA(4) * EXP(ETA(4)) 		; Individual volumn for central compartment
-			V3 = THETA(5) * EXP(ETA(5)) 		; Individual volumn for peripheral compartment
+			V2 = THETA(4) * EXP(ETA(4)) 		; Individual volume for central compartment
+			V3 = THETA(5) * EXP(ETA(5)) 		; Individual volume for peripheral compartment
 			Q  = THETA(6) * EXP(ETA(6))	
 
 			KTR = 5 / MTT
