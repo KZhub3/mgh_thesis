@@ -9,3 +9,4 @@ This repository contains NONMEM control files for the dissertation. Detailed inf
 **run87.mod**: The final pharmacokinetic model (using subroutine ADVAN5 TRANS1). <br>
 **run100.mod**: The final pharmacokinetic model with secondary parameter calculation codes (using subroutine ADVAN6 TOL=6; TRANS=1).<br>
 **run105.mod**: Linear effect model with intercept for QT analysis.<br>
+**run106.mod**: Maximum effect model for QT analysis.<br>
